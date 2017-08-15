@@ -1,0 +1,73 @@
+
+
+
+<style type="text/css">
+
+
+body {
+  font-family: sans-serif;
+}
+
+ul {
+  position: relative;
+  padding: 0;
+  padding-left: 20px;
+}
+ul:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  background-color: #000;
+  top: 0px;
+  left: 0px;
+  bottom: 10px;
+  transform: translateY(-1px);
+}
+ul li {
+  position: relative;
+  list-style: none;
+  line-height: 20px;
+}
+ul li:before {
+  position: absolute;
+  content: '';
+  width: 16.66667px;
+  height: 1px;
+  background-color: #000;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-1px);
+}
+
+body > ul:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  background-color: #000;
+  top: 10px;
+  left: 0px;
+  bottom: 10px;
+  transform: translateY(-1px);
+}
+
+
+</style>
+
+
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>Aliquam tincidunt mauris eu risus.</li>
+  <li>Vestibulum auctor dapibus neque.</li>
+   <ul>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+        <li>Aliquam tincidunt mauris eu risus.</li>
+        <li>Vestibulum auctor dapibus neque.</li>
+      </ul>   
+     <li>Aliquam tincidunt mauris eu risus.</li>
+     <li>Vestibulum auctor dapibus neque.</li>
+   </ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+</ul>   
